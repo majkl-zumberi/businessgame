@@ -16,6 +16,11 @@ export default function (Vue, { appOptions, head }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900',
   });
+
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap',
+  });
   
   const opts = {  } //opts includes, vuetify themes, icons, etc.
   Vue.use(Vuetify)
