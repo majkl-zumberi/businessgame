@@ -1,6 +1,6 @@
 <template>
   <v-app class="layout">
-    <v-app-bar app flat>
+    <v-app-bar app flat class="white">
       <v-toolbar-title>Gridsome</v-toolbar-title>
     </v-app-bar>
     <v-main>
