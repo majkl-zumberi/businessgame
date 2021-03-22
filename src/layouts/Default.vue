@@ -18,4 +18,8 @@ query {
 </static-query>
 
 <style>
+.layout{
+  width: auto;
+}
+html,body{ overflow-x: hidden; }
 </style>
