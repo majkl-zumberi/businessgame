@@ -158,6 +158,5 @@ h1,h2,p,span{
   background-position: top center;
   transform:scaleX(-1);
   border-radius: 5px;
-  height: 70vh;
 }
 </style>
