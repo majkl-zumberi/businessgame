@@ -1,7 +1,7 @@
 <template>
   <v-app class="layout">
-    <v-app-bar app flat class="white">
-      <v-toolbar-title>Gridsome</v-toolbar-title>
+    <v-app-bar app flat class="brown lighten-2">
+      <v-toolbar-title class="white--text">Talenti4Future</v-toolbar-title>
     </v-app-bar>
     <v-main>
       <slot/>
