@@ -10,17 +10,19 @@
           <div class="text-wrapper-card">
             <p class="font-weight-bold">Scopri cosa significa essere un vero Marketer attraverso i nostri corsi dedicati al mondo marketing! <br> Ti aspettiamo!</p>
           </div>
-          <v-btn
-            color="brown mt-9"
-            dark >
-            compila il questionario
-          </v-btn>
+          <g-link to="/survey/">
+            <v-btn
+              color="brown mt-9"
+              dark >
+              compila il questionario
+            </v-btn>
+          </g-link>
         </div>
       </v-flex>
       <v-flex xs12 sm6 md7 class="image-container">
         <div></div>
       </v-flex>
-      <v-row no-gutters class="pa-14 pa-md-16">
+      <v-row no-gutters class="pa-14 pa-md-16 white">
         <v-col cols="12" xs="12" sm="10" md="3" xl="2" offset-sm="2" offset-md="2" offset-xl="3" >
           <section class="pa-3">
             <div class="image-circle-container">
@@ -55,14 +57,17 @@
         <v-col cols="12"  xs="12" sm="9" md="4" lg="3" offset-sm="3" offset-md="2" offset-lg="3">
           <h1 class="font-weight-regular ">Mettiti alla prova!</h1>
           <p class="text-wrapper-card">Testa la tua digital marketing knowledge eseguendo un semplice quiz</p>
-           <v-btn
-            class="px-2 mb-sm-2 mb-2"
-            outlined
-            color="brown"
-            :width="$vuetify.breakpoint.xs?'100%':null"
-          >
-            avvia quiz
-          </v-btn>
+           <g-link to="/quiz/">
+            <v-btn
+              class="px-2 mb-sm-2 mb-2"
+              outlined
+              color="brown"
+              :width="$vuetify.breakpoint.xs?'100%':null"
+            >
+              avvia quiz
+            </v-btn>
+          </g-link>
+           
         </v-col>
 
         <v-col cols="12" xs="12" sm="9" md="4" lg="3" offset-sm="3" offset-md="2" offset-lg="0" >
