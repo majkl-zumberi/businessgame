@@ -152,6 +152,7 @@ h1,h2,p,span{
   background-size: cover;
   width: 900px;
   height: auto;
+  min-height:70vh;
   position: relative;
   /* mix-blend-mode: luminosity; */
   filter: hue-rotate(27deg);
