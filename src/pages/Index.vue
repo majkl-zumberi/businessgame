@@ -14,7 +14,7 @@
             <v-btn
               color="brown mt-9"
               dark >
-              compila il questionario
+              Candidati
             </v-btn>
           </g-link>
         </div>
