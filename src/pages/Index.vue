@@ -176,6 +176,9 @@ export default {
 </script>
 
 <style>
+.row + .row {
+    margin: 0 !important;
+}
 .circle{
   border-radius: 50%;
 
