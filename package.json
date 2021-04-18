@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@ditdot-dev/vue-flow-form": "^1.1.7",
+    "axios": "^0.21.1",
     "gridsome": "^0.7.0",
     "vuetify": "^2.4.7"
   },
