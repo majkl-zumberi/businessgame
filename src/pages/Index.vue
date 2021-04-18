@@ -79,7 +79,29 @@
           src="../assets/adult-smiling-casual-clothes-guy-with-beard-hugs-favorite-books-to-himself-isolated-on-pink.jpg"/>
         </v-col>
       </v-row>
-      
+      <v-row  class="pa-14 pa-md-16 white">
+        <v-col cols="12"  xs="12" sm="12" md="12" lg="12">
+          <h1 class=" text-center font-weight-regular">Ecco alcuni corsi che offriamo:</h1>
+        </v-col>
+        <v-card
+            v-for="edge in $page.courses.edges" :key="edge.node.id"
+            class="mx-auto mt-5"
+            width="300"
+            >
+            <v-img
+                class="white--text align-end"
+                height="200px"
+                :src="edge.node.image"
+                >
+            </v-img>
+            <v-card-title class="brown--text">{{edge.node.title}}</v-card-title>
+            <v-card-subtitle>
+              {{edge.node.description}}
+            </v-card-subtitle>
+            
+            
+          </v-card>
+      </v-row >
       <v-footer
     dark
     padless
@@ -121,7 +143,20 @@
 
   </Layout>
 </template>
-
+<page-query>
+query{
+  courses: allCourse {
+    edges {
+      node {
+        id
+        title
+        description
+        image
+      }
+    }
+  }
+}
+</page-query>
 <script>
 export default {
   metaInfo: {
