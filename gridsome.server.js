@@ -4,6 +4,7 @@
 
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const axios = require("axios")
 const nodeExternals = require('webpack-node-externals')
 module.exports = function (api) {
 
@@ -17,12 +18,21 @@ module.exports = function (api) {
     }
   })
 
-  api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  })
+  api.loadSource(async actions => {
+    const { data } = await axios.get('https://polar-oasis-25586.herokuapp.com/courses')
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
+    const collection = actions.addCollection({
+      typeName: 'Course'
+    })
+
+    for (const course of data) {
+      collection.addNode({
+        id: course.id,
+        title: course.Name,
+        description: course.Description,
+        image: course.imageLink
+      })
+    }
   })
 
 }
