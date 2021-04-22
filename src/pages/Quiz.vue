@@ -2,7 +2,7 @@
      <div>
          <header class="vff-header">
       <div class="f-container">
-        <h1 style="color:white">Quiz Talenti4Future</h1>
+        <h1 style="color:white">Quiz TalentPinkies</h1>
       </div>
     </header>
          <flow-form 

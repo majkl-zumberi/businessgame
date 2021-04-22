@@ -125,13 +125,13 @@
       </v-card-text>
 
       <v-card-text class="white--text pt-0">
-        Talenti4Future nasce per assecondare il desiderio di ognuno di essere protagonista e per stimolarti a fare della tua vita qualcosa di grande. È proprio il desiderio ciò che prendiamo a cuore all’inizio del tuo percorso, ancor prima delle tue competenze, per aiutarti a raggiungere i tuoi obiettivi personali, accademici e professionali.
+        TalentPinkies nasce per assecondare il desiderio di ognuno di essere protagonista e per stimolarti a fare della tua vita qualcosa di grande. È proprio il desiderio ciò che prendiamo a cuore all’inizio del tuo percorso, ancor prima delle tue competenze, per aiutarti a raggiungere i tuoi obiettivi personali, accademici e professionali.
       </v-card-text>
 
       <v-divider></v-divider>
 
       <v-card-text class="white--text">
-        {{ new Date().getFullYear() }} — <strong>TALENTI4FUTURE</strong>
+        {{ new Date().getFullYear() }} — <strong>TalentPinkies</strong>
       </v-card-text>
     </v-card>
   </v-footer>
